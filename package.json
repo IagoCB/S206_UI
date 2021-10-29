@@ -1,0 +1,22 @@
+{
+  "name": "testes_ui",
+  "version": "1.0.0",
+  "description": "Lista de exercicio teste de ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IagoCB/S206_UI.git"
+  },
+  "author": "Iago Luiz da Cruz Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IagoCB/S206_UI/issues"
+  },
+  "homepage": "https://github.com/IagoCB/S206_UI#readme",
+  "dependencies": {
+    "cypress": "^8.7.0"
+  }
+}
