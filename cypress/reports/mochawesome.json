@@ -1,0 +1,205 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-29T02:17:21.090Z",
+    "end": "2021-10-29T02:17:44.005Z",
+    "duration": 22915,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d5a975d0-5c58-4729-a36f-346929099fce",
+      "title": "",
+      "fullFile": "cypress/integration/teste_ui/teste.spec.js",
+      "file": "cypress/integration/teste_ui/teste.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+          "title": "Cenário de Teste: ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cenário de Teste juros simples: ",
+              "fullTitle": "Cenário de Teste:  Cenário de Teste juros simples: ",
+              "timedOut": null,
+              "duration": 4446,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.calculadora.com.br/financeira/juros-simples/');\ncy.get('#porcentagem').type('100');\ncy.get('#quantMeses').type('12');\ncy.get('#montanteIni').type('100000');\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "3f1fba25-01e5-4b5b-8352-d29b9d666e3d",
+              "parentUUID": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste juros simples com juros percentual negativo: ",
+              "fullTitle": "Cenário de Teste:  Cenário de Teste juros simples com juros percentual negativo: ",
+              "timedOut": null,
+              "duration": 2624,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.calculadora.com.br/financeira/juros-simples/');\ncy.get('#porcentagem').type('-100');\ncy.get('#quantMeses').type('12');\ncy.get('#montanteIni').type('100000');\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "889423c4-610a-490e-beb6-f07c5366f58e",
+              "parentUUID": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste juros simples com meses negativo: ",
+              "fullTitle": "Cenário de Teste:  Cenário de Teste juros simples com meses negativo: ",
+              "timedOut": null,
+              "duration": 3381,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.calculadora.com.br/financeira/juros-simples/');\ncy.get('#porcentagem').type('100');\ncy.get('#quantMeses').type('-12');\ncy.get('#montanteIni').type('100000');\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "f16c7f9a-3896-4b4d-852e-7c169cb98a1f",
+              "parentUUID": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste juros simples com montante inicial negativo: ",
+              "fullTitle": "Cenário de Teste:  Cenário de Teste juros simples com montante inicial negativo: ",
+              "timedOut": null,
+              "duration": 2942,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.calculadora.com.br/financeira/juros-simples/');\ncy.get('#porcentagem').type('100');\ncy.get('#quantMeses').type('12');\ncy.get('#montanteIni').type('-100000');\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "2abc9289-344b-44a8-85f7-3e5cd3471394",
+              "parentUUID": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste juros simples com mes vazio: ",
+              "fullTitle": "Cenário de Teste:  Cenário de Teste juros simples com mes vazio: ",
+              "timedOut": null,
+              "duration": 2168,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.calculadora.com.br/financeira/juros-simples/');\ncy.get('#porcentagem').type('100');\ncy.get('#quantMeses').type('');\ncy.get('#montanteIni').type('100000');\ncy.get('.btn').click();",
+              "err": {
+                "message": "CypressError: `cy.type()` cannot accept an empty string. You need to actually type something.\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` cannot accept an empty string. You need to actually type something.\n\nhttps://on.cypress.io/type\n    at Context.type (https://www.calculadora.com.br/__cypress/runner/cypress_runner.js:151625:76)\n    at Context.<anonymous> (https://www.calculadora.com.br/__cypress/runner/cypress_runner.js:169912:23)\nFrom Your Spec Code:\n    at Context.eval (https://www.calculadora.com.br/__cypress/tests?p=cypress\\integration\\teste_ui\\teste.spec.js:132:27)",
+                "diff": null
+              },
+              "uuid": "72912a53-d1dd-461c-9e46-e8987890ce29",
+              "parentUUID": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste juros simples com numeros absurdos: ",
+              "fullTitle": "Cenário de Teste:  Cenário de Teste juros simples com numeros absurdos: ",
+              "timedOut": null,
+              "duration": 5334,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.calculadora.com.br/financeira/juros-simples/');\ncy.get('#porcentagem').type('19000000000000000000000000000000000000000000000000000000000000000000000');\ncy.get('#quantMeses').type('12000000000000000000000000000000000000000003');\ncy.get('#montanteIni').type('999999900000000000000000000000000000000123123');\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "628e574b-6701-4449-82da-ff20281429a5",
+              "parentUUID": "9167f41c-8c3b-4f48-ade5-9be39c02f6d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3f1fba25-01e5-4b5b-8352-d29b9d666e3d",
+            "889423c4-610a-490e-beb6-f07c5366f58e",
+            "f16c7f9a-3896-4b4d-852e-7c169cb98a1f",
+            "2abc9289-344b-44a8-85f7-3e5cd3471394",
+            "628e574b-6701-4449-82da-ff20281429a5"
+          ],
+          "failures": [
+            "72912a53-d1dd-461c-9e46-e8987890ce29"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20895,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
